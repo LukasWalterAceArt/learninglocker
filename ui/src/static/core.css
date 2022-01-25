@@ -11677,6 +11677,37 @@ a.dark-link {
 
 
 .table{
-  color: red !important;
+  color: #002f7a !important;
 }
+
+.recharts-bar path{
+  fill: green;
+}
+
+.recharts-cartesian-axis-tick-line{
+  display: none;
+}
+
+.recharts-cartesian-axis-line{
+  display: none;
+}
+
+.sc-jWBwVP.ihZrJq, .sc-brqgnP.kZSLCD, .sc-eHgmQL.fFhvHP{ 
+  display: none;
+}
+
+.recharts-cartesian-grid{
+  display: none;
+}
+
+/* .recharts-tooltip-wrapper p {
+  display: none;
+} */
+
+/* .recharts-tooltip-wrapper div{
+  background-color: black;
+} */
+
+
+
 

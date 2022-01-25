@@ -111,7 +111,7 @@ class BarChart extends Component {
             }
           ` }} />
         <Chart
-          className={`grid-${chartUuid}`}
+          className={`grid-${chartUuid} barChartEdeka`}
           data={getChartData(this.getDataChunk(model)(data)(page), this.props.hiddenSeries)}
           width={width}
           height={height}
