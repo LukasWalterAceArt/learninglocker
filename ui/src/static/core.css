@@ -11675,30 +11675,79 @@ a.dark-link {
   padding-right: 0px;
 }
 
-
-.table{
-  color: #002f7a !important;
-}
-
+/* Allgemeine Styles */
 .recharts-bar path{
-  fill: green;
-}
-
-.recharts-cartesian-axis-tick-line{
-  display: none;
-}
-
-.recharts-cartesian-axis-line{
-  display: none;
-}
-
-.sc-jWBwVP.ihZrJq, .sc-brqgnP.kZSLCD, .sc-eHgmQL.fFhvHP{ 
-  display: none;
+  fill: #1b66b3;
 }
 
 .recharts-cartesian-grid{
   display: none;
 }
+
+.panel-title{
+  display: flex;
+  justify-content: center; 
+}
+
+.panel-title span{
+  color: #4a4a4a;
+  font-size: 1.6732rem
+
+}
+
+.panel-default{
+  border-top: none !important;
+}
+
+.nextButton, .previousButton{
+  display: none !important;
+}
+
+
+
+.react-grid-item {
+  width: 100% !important;
+}
+
+/* Bar Charts Styles */
+
+.recharts-cartesian-axis-tick-line{
+  display: none;
+}
+
+.recharts-yAxis .recharts-cartesian-axis-line{
+  display: none;
+}
+
+.sc-jWBwVP.ihZrJq, .sc-brqgnP.kZSLCD, .sc-eHgmQL.fFhvHP{  /* Next Button, Y-Achse Title*/
+  /* display: none; */
+}
+
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0 !important; 
+  padding: 0 !important;
+  border: 0 !important;
+  outline: 0 !important;
+  font-size: 100% !important;
+  vertical-align: baseline !important;
+  background: transparent !important;
+}
+
+.tableEdeka th{
+  display: none;
+}
+
+tr:nth-child(1n+6){ /* Only for development */
+  display: none;
+}
+
+.tableEdeka tr td:last-child{
+  color: #1b66b3;
+} 
+
+
+
+
 
 /* .recharts-tooltip-wrapper p {
   display: none;

@@ -8,73 +8,10 @@ const TableContainer = styled.div`
   overflow-y: scroll;
 `;
 
-const Table = styled.table`
-  border-collapse: separate;
-  margin: 0;
-  border: 0;
-
-  > thead > tr > th,
-  > thead > tr > td,
-  > tbody > tr > th,
-  > tbody > tr > td,
-  > tfoot > tr > th,
-  > tfoot > tr > td {
-    border: 0;
-  }
-
-  > thead > tr > th,
-  > thead > tr > td,
-  > tfoot > tr > th,
-  > tfoot > tr > td {
-    border-top: 1px solid #ddd !important;
-    border-left: 1px solid #ddd !important;
-  }
-
-  > thead > tr:last-child > th,
-  > thead > tr:last-child > td,
-  > tfoot > tr:last-child > th,
-  > tfoot > tr:last-child > td {
-    border-bottom: 1px solid #ddd !important;
-  }
-
-  > thead > tr > th:last-child,
-  > thead > tr > td:last-child,
-  > tfoot > tr > th:last-child,
-  > tfoot > tr > td:last-child {
-    border-right: 1px solid #ddd !important;
-  }
-
-  > tbody > tr > th,
-  > tbody > tr > td {
-    border-left: 1px solid #ddd !important;
-    border-bottom: 1px solid #ddd !important;
-  }
-
-  > tbody > tr:last-child > th,
-  > tbody > tr:last-child > td {
-    border-left: 1px solid #ddd !important;
-  }
-
-  > tbody > tr > th:last-child,
-  > tbody > tr > td:last-child {
-    border-right: 1px solid #ddd !important;
-  }
-`;
+const Table = styled.table``;
 
 const tableSectionStylesMixin = css`
-  > tr:nth-child(odd) {
-    > th,
-    > td {
-      background-color: ${props => props.isWhiteStartingStripe && '#ffffff' || '#f9f9f9'};
-    }
-  }
-
-  > tr:nth-child(even) {
-    > th,
-    > td {
-      background-color: ${props => props.isWhiteStartingStripe && '#f9f9f9' || '#ffffff'};
-    }
-  }
+  
 `;
 
 const TableHead = styled.thead`${tableSectionStylesMixin}`;
@@ -288,7 +225,7 @@ const ScrollableTable = ({
 
   return (
     <TableContainer>
-      <Table className={'table table-bordered table-striped'}>
+      <Table className={'table table-bordered table-striped tableEdeka'}>
         {renderHead({ tHead, trsInTHead, fixTHead, tHeadTrsRefs, tHeadTrsTops, tHeadIsWhiteStartingStripe })}
 
         {renderBody({ tBody, trsInTBody, tBodyIsWhiteStartingStripe })}

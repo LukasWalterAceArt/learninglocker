@@ -81,6 +81,7 @@ class BarChart extends Component {
     <span style={{ alignSelf: 'flex-start', marginLeft: 10 }}>
       <Button
         raised
+        className="previousButton"
         label="Previous"
         onMouseUp={this.displayPrevPage}
         icon={<i className="icon ion-chevron-left" />} />
@@ -91,6 +92,7 @@ class BarChart extends Component {
     <span style={{ marginRight: 10, marginLeft: 'auto' }}>
       <Button
         raised
+        className="nextButton"
         label="Next"
         onMouseUp={this.displayNextPage}
         icon={<i className="icon ion-chevron-right" />} />
@@ -146,7 +148,7 @@ class BarChart extends Component {
         <div className={'clearfix'} />
         <BarContainer>
           <StyledYAxis>
-            {wrapLabel(this.props.model.get('axesyLabel') || this.props.model.getIn(['axesgroup', 'searchString'], 'Y-Axis'))}
+            {/* {wrapLabel(this.props.model.get('axesyLabel') || this.props.model.getIn(['axesgroup', 'searchString'], 'Y-Axis'))} */}
           </StyledYAxis>
           <ChartWrapper>
             {this.props.chartWrapperFn((this.renderBarChart(model)(colors)(labels)(data)(stacked)(activePage)))}
@@ -154,7 +156,7 @@ class BarChart extends Component {
         </BarContainer>
         <XAxisLabel>
           <StyledXAxis>
-            {this.props.model.get('axesxLabel') || this.props.model.getIn(['axesvalue', 'searchString'], 'X-Axis')}
+           {/*  {this.props.model.get('axesxLabel') || this.props.model.getIn(['axesvalue', 'searchString'], 'X-Axis')} */}
           </StyledXAxis>
         </XAxisLabel>
       </StyledChart>
