@@ -30,14 +30,13 @@ class CustomTooltip extends Component {
 
     return (
       <StyledCustomTooltip>
-        <Label>{`${display(label)}`}</Label>
         <Value>
           {
             payload
               .map(
                 val => (
                   !isUndefined(val.value)
-                    ? (<p key={val.name}>{`${val.name} - ${round(val.value, 2)}`}</p>)
+                    ? (<p key={val.name}>{`${round(val.value, 2)}`}</p>)
                     : null
                 )
               )

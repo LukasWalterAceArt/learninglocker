@@ -101,6 +101,7 @@ const renderBar = index => stacked => label => color => (
     dataKey={`Series ${index + 1}`}
     fill={color}
     name={label}
+    maxBarSize={50}
     stackId={stacked ? 1 : index} />
 );
 

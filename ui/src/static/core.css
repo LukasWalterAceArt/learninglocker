@@ -11680,18 +11680,88 @@ a.dark-link {
   fill: #1b66b3;
 }
 
-.recharts-cartesian-grid{
-  display: none;
-}
+
 
 .panel-title{
   display: flex;
   justify-content: center; 
 }
 
+html {
+  font-size: 17px !important;
+}
+
+
+@font-face{
+	font-family:"PlakW02-BlackCondensed";
+	src:url("edekaFonts/PlakW02-BlackCondensed.eot?#iefix");
+	src:url("edekaFonts/PlakW02-BlackCondensed.eot?#iefix") format("eot"),url("edekaFonts/PlakW02-BlackCondensed.woff2") format("woff2"),url("edekaFonts/PlakW02-BlackCondensed.woff") format("woff"),url("edekaFonts/PlakW02-BlackCondensed.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: 'Work Sans';
+	src: url('edekaFonts/WorkSans-Medium.eot');
+	src: url('edekaFonts/WorkSans-Medium.eot?#iefix') format('embedded-opentype'),
+			url('edekaFonts/WorkSans-Medium.woff2') format('woff2'),
+			url('edekaFonts/WorkSans-Medium.woff') format('woff'),
+			url('edekaFonts/WorkSans-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Work Sans';
+	src: url('edekaFonts/WorkSans-Light.eot');
+	src: url('edekaFonts/WorkSans-Light.eot?#iefix') format('embedded-opentype'),
+			url('edekaFonts/WorkSans-Light.woff2') format('woff2'),
+			url('edekaFonts/WorkSans-Light.woff') format('woff'),
+			url('edekaFonts/WorkSans-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Work Sans';
+	src: url('edekaFonts/WorkSans-Bold.eot');
+	src: url('edekaFonts/WorkSans-Bold.eot?#iefix') format('embedded-opentype'),
+			url('edekaFonts/WorkSans-Bold.woff2') format('woff2'),
+			url('edekaFonts/WorkSans-Bold.woff') format('woff'),
+			url('edekaFonts/WorkSans-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+.recharts-cartesian-axis-tick-value tspan{
+  font-family: "WorkSans", Helvetica, Arial, sans-serif;
+  color: #4a4a4a;
+
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+@media only screen and (min-width: 576px) {
+  .recharts-cartesian-axis-tick-value tspan{
+    font-size: 18px; 
+  }
+}
+
+
+/* font-family: "Work Sans", Helvetica, Arial, sans-serif; */
+
 .panel-title span{
   color: #4a4a4a;
-  font-size: 1.6732rem
+  font-size: 1.6732rem;
+
+
+  font-family: "PlakW02-BlackCondensed", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
 }
 
@@ -11709,14 +11779,50 @@ a.dark-link {
   width: 100% !important;
 }
 
+/* Tooltip Styles */
+
+.recharts-tooltip-wrapper div{
+  border: none !important;
+  background: black !important;
+  height: 25px !important;
+  width: 40px !important;
+  border-radius: 0px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 0px !important;
+  
+}
+
+.recharts-tooltip-wrapper p{
+  color: white;
+  margin: 0px;
+
+  font-family: "WorkSans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
 /* Bar Charts Styles */
 
 .recharts-cartesian-axis-tick-line{
   display: none;
 }
 
+.tableEdeka .recharts-cartesian-grid{
+  display: none;
+}
+
 .recharts-yAxis .recharts-cartesian-axis-line{
   display: none;
+}
+
+.recharts-cartesian-axis-line{
+  stroke: rgb(74, 74, 74, 0.5);
 }
 
 .sc-jWBwVP.ihZrJq, .sc-brqgnP.kZSLCD, .sc-eHgmQL.fFhvHP{  /* Next Button, Y-Achse Title*/

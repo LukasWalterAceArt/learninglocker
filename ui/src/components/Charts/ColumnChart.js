@@ -38,14 +38,14 @@ const renderBarChart = colors => (labels, toggleHiddenSeries, hiddenSeries) => s
         }
       ` }} />
     <Chart
-      className={`grid-${chartUuid}`}
+      className={`grid-${chartUuid} columnChartEdeka`}
       data={getChartData(data, hiddenSeries)}
       width={width}
       height={height}
       layout="horizontal">
       <XAxis type="category" dataKey="cellId" tickFormatter={getShortModel(data)} />
       <YAxis type="number" />
-      <CartesianGrid strokeDasharray="1 1" />
+      <CartesianGrid strokeDasharray="0 0" />
       {renderLegend(labels, toggleHiddenSeries)}
       {renderBars(colors)(labels)(stacked)}
       {renderTooltips(data)}
@@ -58,7 +58,7 @@ const renderChart = (model, component, axesLabels, chartWrapperFn) =>
   <StyledChart>
     <BarContainer>
       <StyledYAxis>
-        {wrapLabel(axesLabels.yLabel || model.getIn(['axesvalue', 'searchString'], 'Y-Axis'))}
+        {/* wrapLabel(axesLabels.yLabel || model.getIn(['axesvalue', 'searchString'], 'Y-Axis')) */}
       </StyledYAxis>
       <ChartWrapper>
         {chartWrapperFn(component)}
@@ -66,7 +66,7 @@ const renderChart = (model, component, axesLabels, chartWrapperFn) =>
     </BarContainer>
     <XAxisLabel>
       <StyledXAxis>
-        {axesLabels.xLabel || model.getIn(['axesgroup', 'searchString'], 'X-Axis')}
+        {/* axesLabels.xLabel || model.getIn(['axesgroup', 'searchString'], 'X-Axis') */}
       </StyledXAxis>
     </XAxisLabel>
   </StyledChart>
