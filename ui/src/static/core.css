@@ -11813,7 +11813,7 @@ html {
   display: none;
 }
 
-.tableEdeka .recharts-cartesian-grid{
+.barChartEdeka .recharts-cartesian-grid{
   display: none;
 }
 
@@ -11829,6 +11829,9 @@ html {
   /* display: none; */
 }
 
+
+/* Table Styles */
+
 table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0 !important; 
   padding: 0 !important;
@@ -11837,11 +11840,23 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-size: 100% !important;
   vertical-align: baseline !important;
   background: transparent !important;
+
+
 }
 
 .tableEdeka th{
   display: none;
 }
+
+.tableEdeka tr td{
+  font-family: "WorkSans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 
 tr:nth-child(1n+6){ /* Only for development */
   display: none;
@@ -11849,6 +11864,7 @@ tr:nth-child(1n+6){ /* Only for development */
 
 .tableEdeka tr td:last-child{
   color: #1b66b3;
+  font-weight: bold;
 } 
 
 
