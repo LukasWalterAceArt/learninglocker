@@ -11665,7 +11665,7 @@ a.dark-link {
   font-feature-settings: "liga" 1;
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
-}
+}/
 
 .row-no-padding > div:first-child {
   padding-left: 0px;
@@ -11676,9 +11676,9 @@ a.dark-link {
 }
 
 /* Allgemeine Styles */
-.recharts-bar path{
+/* .recharts-bar path{
   fill: #1b66b3;
-}
+} */
 
 
 
@@ -11866,6 +11866,10 @@ tr:nth-child(1n+6){ /* Only for development */
   color: #1b66b3;
   font-weight: bold;
 } 
+
+abbr {
+  color: #1b66b3 !important;
+}
 
 
 

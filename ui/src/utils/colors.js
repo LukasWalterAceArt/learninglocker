@@ -7,7 +7,7 @@ const hexToRgb = (hex) => {
   } : null;
 };
 // eslint-disable-next-line no-case-declarations
-const COLORS = ['#E77E04', '#F6AB35', '#CD7228', '#006692', '#E73304'];
+const COLORS = ['#1b66b3', '#f8ec00', '#CD7228', '#006692', '#E73304'];
 
 const colorCycle = (value) => {
   if (value > (COLORS.length - 1)) {

@@ -14,9 +14,8 @@ import PieTooltip from './PieTooltip';
 
 const cellPadding = 5;
 
-const getInnerRadius = size => i => hole => (
-  (size * i) + (cellPadding * i) + hole
-);
+const getInnerRadius = size => i => hole =>
+  (size * (i + 1)) + (cellPadding * i) + hole - 40;
 
 const getOuterRadius = size => i => hole =>
   (size * (i + 1)) + (cellPadding * i) + hole;
