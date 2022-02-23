@@ -11665,7 +11665,7 @@ a.dark-link {
   font-feature-settings: "liga" 1;
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
-}/
+}
 
 .row-no-padding > div:first-child {
   padding-left: 0px;
@@ -11862,7 +11862,7 @@ tr:nth-child(1n+6){ /* Only for development */
   display: none;
 }
 
-.tableEdeka tr td:last-child{
+.tableEdeka tr td:not(:first-child) {
   color: #1b66b3;
   font-weight: bold;
 } 
@@ -11870,9 +11870,6 @@ tr:nth-child(1n+6){ /* Only for development */
 abbr {
   color: #1b66b3 !important;
 }
-
-
-
 
 
 /* .recharts-tooltip-wrapper p {

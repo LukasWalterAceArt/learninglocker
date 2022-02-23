@@ -28,6 +28,8 @@ class CustomTooltip extends Component {
 
     const { payload, label } = this.props;
 
+    console.log(payload.length); //Testing
+
     return (
       <StyledCustomTooltip>
         <Value>
@@ -37,7 +39,7 @@ class CustomTooltip extends Component {
                 val => (
                   !isUndefined(val.value)
                     ? (<p key={val.name}>{`${round(val.value, 2)}`}</p>)
-                    : null
+                    : null 
                 )
               )
           }

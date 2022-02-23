@@ -56,4 +56,4 @@ export const PROGRESS_MODELS = {
   }
 };
 
-export const VISUALISATION_COLORS = ['#1E8BC3', '#f8ec00', '#36D7B7', '#9B59B6', '#F77F3F', '#1b66b3', '#ED4444'];
+export const VISUALISATION_COLORS = ['#1b66b3', '#f8ec00', '#36D7B7', '#9B59B6', '#F77F3F', '#1E8BC3', '#ED4444'];
